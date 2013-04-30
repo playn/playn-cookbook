@@ -15,9 +15,9 @@ public class Asteroids extends Game.Default {
   private final ImageLayer _ship = graphics().createImageLayer();
 
   // these track the ship's current orientation and velocity
-  private static final float ROT_VEL = 0.025f; // in radians per millisecond
+  private static final float ROT_VEL = 0.001f; // in radians per millisecond
   private float _orient; // in radians
-  private static final float ACCEL = 0.005f; // in pixels per millisecond
+  private static final float ACCEL = 0.0003f; // in pixels per millisecond
   private Vector _vel = new Vector(0, 0); // in pixels per millisecond
 
   // these track the current state of the left, right and space keys
@@ -43,6 +43,7 @@ public class Asteroids extends Game.Default {
         switch (event.key()) {
         case  LEFT: _left  = true; break;
         case RIGHT: _right = true; break;
+        case UP:
         case SPACE: _space = true; break;
         default: break;
         }
@@ -51,6 +52,7 @@ public class Asteroids extends Game.Default {
         switch (event.key()) {
         case  LEFT: _left  = false; break;
         case RIGHT: _right = false; break;
+        case UP:
         case SPACE: _space = false; break;
         default: break;
         }
@@ -63,8 +65,8 @@ public class Asteroids extends Game.Default {
     _clock.update(delta);
 
     // if the left or right key are down, activate a uniform rotational velocity
-    if (_left)  _orient -= ROT_VEL;
-    if (_right) _orient += ROT_VEL;
+    if (_left)  _orient -= ROT_VEL * delta;
+    if (_right) _orient += ROT_VEL * delta;
 
     // apply our current orientation to the ship sprite
     _ship.setRotation(_orient);
@@ -78,8 +80,8 @@ public class Asteroids extends Game.Default {
       // now we decompose the thrust into x and y components
       float tx = FloatMath.cos(thrustAngle), ty = FloatMath.sin(thrustAngle);
       // and apply it to our velocity
-      _vel.x += tx * ACCEL;
-      _vel.y += ty * ACCEL;
+      _vel.x += tx * ACCEL * delta;
+      _vel.y += ty * ACCEL * delta;
     }
 
     // apply our current velocity to the ship's position
