@@ -7,15 +7,15 @@ example which is embedded in the web page that discusses the technique in questi
 
 The current entries are enumerated below, grouped into broad categories.
 
+## Control Techniques
+
+  * [Asteroids-like ship controls](http://threerings.github.io/playn-cookbook/control/asteroids/)
+
 ## Environment Techniques
 
   * TBD
 
 ## Character Techniques
-
-  * TBD
-
-## Input Techniques
 
   * TBD
 
