@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Top-down Editor - Environs - PlayN Cookbook</title>
+  </head>
+  <body style="max-width: 800px">
+    <h1>Map Editor for Top-Down Tiled View</h1>
+    <p>
+      This recipe shows a simple map editor for a top-down tiled view. This extends the recipe for
+      displaying a top-down tiled view with the ability to select a tile from the atlas texture and
+      draw that tile onto the map.
+    </p>
+
+    <h3>Live Demo</h3>
+    <div id="playn-root" style="width: 800px; height: 600px"></div>
+
+    <h3>Controls</h3>
+    <ul>
+      <li> Arrow keys - scroll the view </li>
+      <li> Click upper left corner then drag to select a tile from the palette </li>
+      <li> Click anywhere else on the view to draw that tile on the view </li>
+      <li> Hold down 'r' and click and drag to drag out a rectangle of the same tile </li>
+    </ul>
+
+    <h3>Source Code</h3>
+    <ul>
+      <li><a href="https://github.com/threerings/playn-cookbook/blob/master/environs/topeditor/core/src/main/java/cookbook/topeditor/core/TopEditor.java">TopEditor.java</a></li>
+      <li><a href="https://github.com/threerings/playn-cookbook/blob/master/environs/topeditor/core/src/main/java/cookbook/topeditor/core/Camera.java">Camera.java</a></li>
+      <li><a href="https://github.com/threerings/playn-cookbook/blob/master/environs/topeditor/core/src/main/java/cookbook/topeditor/core/TileChooser.java">TileChooser.java</a></li>
+      <li><a href="https://github.com/threerings/playn-cookbook/blob/master/environs/topeditor/core/src/main/java/cookbook/topeditor/core/TilePainter.java">TilePainter.java</a></li>
+      <li><a href="https://github.com/threerings/playn-cookbook/blob/master/environs/topeditor/core/src/main/java/cookbook/topeditor/core/TileSheet.java">TileSheet.java</a></li>
+      <li><a href="https://github.com/threerings/playn-cookbook/blob/master/environs/topeditor/core/src/main/java/cookbook/topeditor/core/TileStore.java">TileStore.java</a></li>
+      <li><a href="https://github.com/threerings/playn-cookbook/blob/master/environs/topeditor/core/src/main/java/cookbook/topeditor/core/TileView.java">TileView.java</a></li>
+    </ul>
+
+    <h3>Exercises</h3>
+    <ul>
+      <li> Extend the editor to support a "props" layer of tiles that is rendered on top of the
+        "ground" layer. Allow the transparent tiles in the tile atlas (the boats, bridges, market
+        stalls, etc.) to be added to the props layer. </li>
+
+      <li> Add support for "auto-fringing". The user simply draws a block of grass, for example,
+        and the editor automatically surrounds it with the appropriate "fringe" tiles on the edges
+        and corners. For extra credit, support non-rectangular shapes. Note: you may want to put
+        the fringe tiles on a separate layer and recompute all fringes at once (on request). </li>
+    </ul>
+
+    <p>Back to <a href="https://github.com/threerings/playn-cookbook">cookbook</a>.
+
+    <script src="topeditor/topeditor.nocache.js"></script>
+  </body>
+</html>

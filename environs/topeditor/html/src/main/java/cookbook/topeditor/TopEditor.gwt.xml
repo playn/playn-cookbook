@@ -1,0 +1,11 @@
+<module rename-to='topeditor'>
+  <inherits name='playn.PlayN'/>
+  <inherits name='TopEditorAssets'/>
+
+  <source path='core'/>
+  <source path='html'/>
+
+  <public path="resources" />
+
+  <entry-point class='cookbook.topeditor.html.TopEditorHtml'/>
+</module>
