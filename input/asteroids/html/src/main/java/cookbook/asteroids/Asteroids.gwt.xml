@@ -1,0 +1,11 @@
+<module rename-to='asteroids'>
+  <inherits name='playn.PlayN'/>
+  <inherits name='AsteroidsAssets'/>
+
+  <source path='core'/>
+  <source path='html'/>
+
+  <public path="resources" />
+
+  <entry-point class='cookbook.asteroids.html.AsteroidsHtml'/>
+</module>
