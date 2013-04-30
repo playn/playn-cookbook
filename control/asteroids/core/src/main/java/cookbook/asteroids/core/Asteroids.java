@@ -62,7 +62,7 @@ public class Asteroids extends Game.Default {
   public void update(int delta) {
     _clock.update(delta);
 
-    // if the left or right key are down, apply a uniform rotational velocity
+    // if the left or right key are down, activate a uniform rotational velocity
     if (_left)  _orient -= ROT_VEL;
     if (_right) _orient += ROT_VEL;
 
@@ -88,9 +88,9 @@ public class Asteroids extends Game.Default {
     // wrap around if we hit the edge of the display
     float width = graphics().width(), height = graphics().height();
     if (nx < 0) nx += width;
-    if (nx > width) nx -= width;
+    else if (nx > width) nx -= width;
     if (ny < 0) ny += height;
-    if (ny > height) ny -= height;
+    else if (ny > height) ny -= height;
     // finally update the ship sprite with the new position
     _ship.setTranslation(nx, ny);
   }
