@@ -1,0 +1,11 @@
+<module rename-to='toptiles'>
+  <inherits name='playn.PlayN'/>
+  <inherits name='TopTilesAssets'/>
+
+  <source path='core'/>
+  <source path='html'/>
+
+  <public path="resources" />
+
+  <entry-point class='cookbook.toptiles.html.TopTilesHtml'/>
+</module>
