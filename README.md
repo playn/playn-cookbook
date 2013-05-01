@@ -13,7 +13,8 @@ The current entries are enumerated below, grouped into broad categories.
 
 ## Environment Techniques
 
-  * TBD
+  * [Top-down Tile View](http://threerings.github.io/playn-cookbook/environs/toptiles/)
+  * [Top-down Tile Editor](http://threerings.github.io/playn-cookbook/environs/topeditor/)
 
 ## Character Techniques
 
