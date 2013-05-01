@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Top-down Tiled View - Environs - PlayN Cookbook</title>
+  </head>
+  <body style="max-width: 800px">
+    <h1>Top-Down Tiled View</h1>
+    <p>
+      This recipe shows a top-down tiled background that can be scrolled around. There is also an
+      <a href="../topeditor/">editor</a> recipe which extends this with editing capabilities.
+    </p>
+
+    <h3>Live Demo</h3>
+    <div id="playn-root" style="width: 800px; height: 400px"></div>
+
+    <h3>Controls</h3>
+    <ul>
+      <li> Arrow keys - scroll the view </li>
+    </ul>
+
+    <h3>Source Code</h3>
+    <ul>
+      <li><a href="https://github.com/threerings/playn-cookbook/blob/master/environs/toptiles/core/src/main/java/cookbook/toptiles/core/Toptiles.java">TopTiles.java</a></li>
+      <li><a href="https://github.com/threerings/playn-cookbook/blob/master/environs/toptiles/core/src/main/java/cookbook/toptiles/core/Camera.java">Camera.java</a></li>
+      <li><a href="https://github.com/threerings/playn-cookbook/blob/master/environs/toptiles/core/src/main/java/cookbook/toptiles/core/TileSheet.java">TileSheet.java</a></li>
+      <li><a href="https://github.com/threerings/playn-cookbook/blob/master/environs/toptiles/core/src/main/java/cookbook/toptiles/core/TileView.java">TileView.java</a></li>
+    </ul>
+
+    <h3>Exercises</h3>
+    <ul>
+      <li> Add support for clicking and dragging the view to scroll it. </li>
+      <li> Add support for clicking on a view location and smoothly scrolling the view to center on
+         the clicked spot. </li>
+    </ul>
+
+    <p>Back to <a href="https://github.com/threerings/playn-cookbook">cookbook</a>.
+
+    <script src="toptiles/toptiles.nocache.js"></script>
+  </body>
+</html>
