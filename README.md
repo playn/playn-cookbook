@@ -10,6 +10,7 @@ The current entries are enumerated below, grouped into broad categories.
 ## Control Techniques
 
   * [Asteroids-like ship controls](http://threerings.github.io/playn-cookbook/control/asteroids/)
+  * [Top-down Dungeon Crawler](http://threerings.github.io/playn-cookbook/control/dungeon/)
 
 ## Environment Techniques
 
