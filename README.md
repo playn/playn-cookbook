@@ -21,3 +21,8 @@ The current entries are enumerated below, grouped into broad categories.
 
   * TBD
 
+## Discuss
+
+Questions and comments can be directed to the [PlayN Google Group].
+
+[PlayN Google Group]: http://groups.google.com/group/playn
