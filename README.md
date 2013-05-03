@@ -17,9 +17,9 @@ The current entries are enumerated below, grouped into broad categories.
   * [Top-down Tile View](http://threerings.github.io/playn-cookbook/environs/toptiles/)
   * [Top-down Tile Editor](http://threerings.github.io/playn-cookbook/environs/topeditor/)
 
-## Character Techniques
+## Special Effects
 
-  * TBD
+  * [Drifting Snow](http://threerings.github.io/playn-cookbook/effects/snow/)
 
 ## Discuss
 

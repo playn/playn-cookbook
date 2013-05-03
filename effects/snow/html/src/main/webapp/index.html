@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Drifting Snow - Effects - PlayN Cookbook</title>
+  </head>
+  <body style="max-width: 800px">
+    <h1>Drifting Snow</h1>
+    <p>
+      This recipe shows how to use the TriplePlay particle system to simulate snowflakes drifting
+      down the screen, with random "wind" that blows them about. Note: the TriplePlay particle
+      system requires WebGL and therefor so does this recipe.
+    </p>
+
+    <h3>Live Demo</h3>
+    <div id="playn-root" style="width: 800px; height: 400px"></div>
+
+    <h3>Controls</h3>
+    <ul>
+      <li> None - just sit back and relax </li>
+    </ul>
+
+    <h3>Source Code</h3>
+    <ul>
+      <li><a href="https://github.com/threerings/playn-cookbook/blob/master/effects/snow/core/src/main/java/cookbook/snow/core/Snow.java">Snow.java</a></li>
+    </ul>
+
+    <h3>Exercises</h3>
+    <ul>
+      <li> Make the rotation vary for different particles. You probably don't want to compute a
+        sin/cos for every single particle, but you could compute five or six of them and assign
+        them to particles based on their index. </li>
+      <li> Make the "wind" vary for different particles. Either choose a different velocity scale
+        factory based on the particle's current y position, or some other differentiating
+        factor. </li>
+    </ul>
+
+    <p>Back to <a href="https://github.com/threerings/playn-cookbook">cookbook</a>.
+
+    <script src="snow/snow.nocache.js"></script>
+  </body>
+</html>
