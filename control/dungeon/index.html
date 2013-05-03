@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Top-down Dungeon-crawler - Control - PlayN Cookbook</title>
+  </head>
+  <body style="max-width: 800px">
+    <h1>Top-down Dungeon-crawler Controls</h1>
+    <p>
+      This recipe shows how to walk a character around a top-down 2D space, as is common in dungeon
+      crawlers and Zelda-like games. In this recipe, the character is always in the center of the
+      screen and the dungeon scrolls as they walk around.
+    </p>
+
+    <h3>Live Demo</h3>
+    <div id="playn-root" style="width: 800px; height: 400px"></div>
+
+    <h3>Controls</h3>
+    <ul>
+      <li> Arrow-keys - walk around </li>
+    </ul>
+
+    <h3>Source Code</h3>
+    <ul>
+      <li><a href="https://github.com/threerings/playn-cookbook/blob/master/control/dungeon/core/src/main/java/cookbook/dungeon/Avatar.java">Avatar.java</a></li>
+      <li><a href="https://github.com/threerings/playn-cookbook/blob/master/control/dungeon/core/src/main/java/cookbook/dungeon/Dungeon.java">Dungeon.java</a></li>
+      <li><a href="https://github.com/threerings/playn-cookbook/blob/master/control/dungeon/core/src/main/java/cookbook/dungeon/DungeonGame.java">DungeonGame.java</a></li>
+      <li><a href="https://github.com/threerings/playn-cookbook/blob/master/control/dungeon/core/src/main/java/cookbook/dungeon/DungeonView.java">DungeonView.java</a></li>
+      <li><a href="https://github.com/threerings/playn-cookbook/blob/master/control/dungeon/core/src/main/java/cookbook/dungeon/Sprite.java">Sprite.java</a></li>
+    </ul>
+
+    <h3>Exercises</h3>
+    <ul>
+      <li> If you're not perfectly lined up with a hallway, the game won't let you enter. Modify
+        the collision detection code to ease you toward the center of the tile if you're walking
+        toward a tile that is passable, but are bumping into the corner of an impassable
+        tile. </li>
+      <li> Reveal dungeon areas as the player walks around. Most commonly one also reveals a whole
+        room as soon as the player walks into it, but you could also just reveal the 3x3 area
+        around the player and force them to map out each room as well. </li>
+    </ul>
+
+    <p>Back to <a href="https://github.com/threerings/playn-cookbook">cookbook</a>.
+
+    <script src="dungeon/dungeon.nocache.js"></script>
+  </body>
+</html>
