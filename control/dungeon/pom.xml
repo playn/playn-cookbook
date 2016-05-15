@@ -4,7 +4,7 @@
   <parent>
     <groupId>com.googlecode.playn</groupId>
     <artifactId>playn-project</artifactId>
-    <version>1.8-SNAPSHOT</version>
+    <version>1.9</version>
   </parent>
 
   <groupId>com.googlecode.playn.cookbook</groupId>
@@ -14,7 +14,7 @@
   <name>DungeonGame Metaproject</name>
 
   <properties>
-    <playn.version>1.8-SNAPSHOT</playn.version>
+    <playn.version>1.9</playn.version>
   </properties>
 
   <profiles>
