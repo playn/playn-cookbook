@@ -9,17 +9,17 @@ The current entries are enumerated below, grouped into broad categories.
 
 ## Control Techniques
 
-  * [Asteroids-like ship controls](http://threerings.github.io/playn-cookbook/control/asteroids/)
-  * [Top-down Dungeon Crawler](http://threerings.github.io/playn-cookbook/control/dungeon/)
+  * [Asteroids-like ship controls](http://samskivert.com/code/playn-cookbook/control/asteroids/)
+  * [Top-down Dungeon Crawler](http://samskivert.com/code/playn-cookbook/control/dungeon/)
 
 ## Environment Techniques
 
-  * [Top-down Tile View](http://threerings.github.io/playn-cookbook/environs/toptiles/)
-  * [Top-down Tile Editor](http://threerings.github.io/playn-cookbook/environs/topeditor/)
+  * [Top-down Tile View](http://samskivert.com/code/playn-cookbook/environs/toptiles/)
+  * [Top-down Tile Editor](http://samskivert.com/code/playn-cookbook/environs/topeditor/)
 
 ## Special Effects
 
-  * [Drifting Snow](http://threerings.github.io/playn-cookbook/effects/snow/)
+  * [Drifting Snow](http://samskivert.com/code/playn-cookbook/effects/snow/)
 
 ## Discuss
 
